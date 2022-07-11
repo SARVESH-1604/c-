@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,ch,ans;
+clrscr();
+printf("Enter 1st Number ");
+scanf("%d",&a);
+printf("Enter 2nd  Number ");
+scanf("%d",&b);
+printf("1 - Add\n2 - Sub\n3 - Mult\n4 - Div\n5 - Rem\n");
+printf("Enter your Choice ");
+scanf("%d",&ch);
+switch(ch)
+{
+case 1:
+ans=a+b;
+break;
+case 2:
+ans=a-b;
+break;
+case 3:
+ans=a*b;
+break;
+case 4:
+ans=a/b;
+break;
+case 5:
+ans=a%b;
+break;
+default:
+printf("The Choice is Invalid ");
+ans=0;
+}
+printf("\nThe answer is %d",ans);
+getch();
+}

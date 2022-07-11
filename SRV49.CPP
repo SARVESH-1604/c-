@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i=2;
+clrscr();
+printf("Enter a number ");
+scanf("%d",&n);
+while(i<n)
+{
+if(n%i==0)
+break;
+else
+i++;
+}
+if(n==1)
+printf("It is not a prime number nor composite ");
+else if(i==n)
+printf("it is a prime number");
+else
+printf("the number is composite");
+getch();
+}

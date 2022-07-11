@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int d;
+clrscr();
+printf("Enter a Day Number ");
+scanf("%d",&d);
+printf("The Day is ");
+switch(d)
+{
+case 1:
+printf("Sun");
+break;
+case 2:
+printf("Mon");
+break;
+case 3:
+printf("Tues");
+break;
+case 4:
+printf("Wenes");
+break;
+case 5:
+printf("Thurs");
+break;
+case 6:
+printf("Fri");
+break;
+case 7:
+printf("Satur");
+break;
+default:
+printf("Invalid ");
+}
+printf("day");
+getch();
+}

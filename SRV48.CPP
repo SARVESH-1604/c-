@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float  bs,da,ta,hra,pf,gross,net;
+char a;
+clrscr();
+printf("Enter Grade of employee  ");
+scanf("%c",&a);
+switch(a)
+{
+case 'A':
+case 'a':
+bs=20000;
+ta=bs*25/100;
+hra=bs*23/100;
+break;
+case 'B':
+case 'b':
+bs=15000;
+ta=bs*23/100;
+hra=bs*21/100;
+break;
+case 'C':
+case 'c':
+bs=12000;
+ta=bs*21/100;
+hra=bs*19/100;
+break;
+case 'D':
+case 'd':
+bs=10000;
+ta=bs*20/100;
+hra=bs*17/100;
+break;
+default:
+printf("Invalid Grade\n");
+}
+da=bs*25/100;
+printf("Basic salary %f\n",bs);
+printf("DA is %f\n",da);
+printf("TA is %f\n",ta);
+printf("HRA is %f\n",hra);
+gross=bs+da+ta+hra;
+printf("Gross salary is %f\n",gross);
+pf=gross*25/100;
+printf("the PF is %f\n",pf);
+net=gross-pf;
+printf("The net salary is %f\n",net);
+getch();
+}
+
+
+
+
+
+
+
+

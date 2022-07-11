@@ -1,0 +1,15 @@
+ #include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i=1;
+clrscr();
+printf("numbers divisible by 3 and 5 between 1 to 100\n");
+while(i<=100)
+{
+if(i%3==0 && i%5==0)
+printf("%d ",i);
+i++;
+}
+getch();
+}
